@@ -9,7 +9,9 @@ https://docs.djangoproject.com/en/6.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.0/ref/settings/
 """
-
+import os
+SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-u@d7j8358)g!edrn+@cz%)3mvefl#i8drgd2iekq#(q2#yos04')
+DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -23,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-u@d7j8358)g!edrn+@cz%)3mvefl#i8drgd2iekq#(q2#yos04'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['jobradar-4tm0.onrender.com']
 
