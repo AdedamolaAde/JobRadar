@@ -73,7 +73,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'core.wsgi.application'
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
+    "https://job-radar-tcdl.vercel.app",
 ]
 
 # Database
