@@ -74,11 +74,13 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'core.wsgi.application'
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = False
 
-#CORS_ALLOWED_ORIGINS = [
-#   "https://job-radar-tcdl.vercel.app",
-#]
+CORS_ALLOWED_ORIGINS = [
+   "https://job-radar-tcdl.vercel.app",
+   "https://jobradar-4tm0.onrender.com",
+   "http://localhost:3000",
+]
 
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
