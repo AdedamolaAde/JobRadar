@@ -14,8 +14,8 @@ import ScraperHealth from '../components/ScraperHealth';
 function Dashboard() {
   const [jobs, setJobs] = useState([]);
   const [selectedJob, setSelectedJob] = useState(null);
-//  const [_loading, setLoading] = useState(false);
- // const [_error, setError] = useState(null);
+  const [, setLoading] = useState(false);
+  const [, setError] = useState(null);
   const [scraping, setScraping] = useState(false);
   const [scrapeResult, setScrapeResult] = useState(null);
   const [lastScraped, setLastScraped] = useState(null);
