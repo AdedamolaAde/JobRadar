@@ -1,5 +1,4 @@
 
-
 function OverviewCharts({ jobs }) {
   if (jobs.length === 0) return null;
 
